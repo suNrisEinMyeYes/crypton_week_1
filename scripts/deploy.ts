@@ -1,10 +1,10 @@
 import { ethers } from "hardhat";
-import {tName, tSymbol, tDec} from "../config"
+import {tName, tSymbol, tDec, tTotalSupply} from "../config"
 
 async function main() {
   
   const Greeter = await ethers.getContractFactory("ERC20");
-  const greeter = await Greeter.deploy(tName, tSymbol, tDec);
+  const greeter = await Greeter.deploy(tName, tSymbol, tDec, tTotalSupply);
 
   await greeter.deployed();
 
