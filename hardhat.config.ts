@@ -11,7 +11,8 @@ import "hardhat-contract-sizer"
 import "./tasks/approve"
 import "./tasks/balanceOf"
 import "./tasks/transfer"
-
+import "./tasks/pairCreate"
+import "./tasks/addLiq"
 
 dotenv.config();
 
@@ -25,8 +26,8 @@ export default {
   },
   networks: {
     rinkeby: {
-      url: process.env.API_URL,
-      accounts: [process.env.PRIVATE_KEY]
+      url: process.env.API_URL !== undefined ? process.env.API_URL : "",
+      accounts: process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : []
     },
   },
 };

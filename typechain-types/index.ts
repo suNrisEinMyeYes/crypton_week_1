@@ -2,13 +2,17 @@
 /* tslint:disable */
 /* eslint-disable */
 export type { AccessControl } from "./AccessControl";
-export type { IAccessControl } from "./IAccessControl";
 export type { ERC165 } from "./ERC165";
-export type { IERC165 } from "./IERC165";
 export type { ERC20 } from "./ERC20";
+export type { IAccessControl } from "./IAccessControl";
+export type { IERC165 } from "./IERC165";
+export type { IUniswapV2Factory } from "./IUniswapV2Factory";
+export type { IUniswapV2Router02 } from "./IUniswapV2Router02";
 
 export { AccessControl__factory } from "./factories/AccessControl__factory";
-export { IAccessControl__factory } from "./factories/IAccessControl__factory";
 export { ERC165__factory } from "./factories/ERC165__factory";
-export { IERC165__factory } from "./factories/IERC165__factory";
 export { ERC20__factory } from "./factories/ERC20__factory";
+export { IAccessControl__factory } from "./factories/IAccessControl__factory";
+export { IERC165__factory } from "./factories/IERC165__factory";
+export { IUniswapV2Factory__factory } from "./factories/IUniswapV2Factory__factory";
+export { IUniswapV2Router02__factory } from "./factories/IUniswapV2Router02__factory";
